@@ -8,7 +8,7 @@
 }
 body
 {
-    background: lightblue;
+    background: #406E8E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +18,30 @@ body
 {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 2000px;
     min-height: 1000px;
-    background: #fff;
+    background:#8EA8C3;
     margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.pagina h1
+{
+    color: #23395B;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.pagina h4
+{
+    color: #fff ;
+    font-size: small;
+    margin-top: 10px;
+    text-transform: none;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.4em;
 }
