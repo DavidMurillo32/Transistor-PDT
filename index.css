@@ -19,9 +19,9 @@ body
     position: relative;
     width: 100%;
     max-width: 2000px;
-    min-height: 1000px;
+    min-height: 3000px;
     background:#fff;
-    margin: 50px;
+    margin: 30px;
     display: grid;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
@@ -35,6 +35,7 @@ body
     margin: 0px;
     display: grid;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    border-bottom: 5px solid rgba(255,255,255,0.2);
 }
 .superior h1
 {
@@ -42,7 +43,6 @@ body
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
-    text-align: left;
     font-weight: 600;
     line-height: 1.4em;
 }
@@ -56,26 +56,78 @@ body
     font-weight: 600;
     line-height: 1.4em;
 }
-.pagina .recuadro1
-{
-    position: absolute;
-    background: #fff;
-    padding: 40px;
-}
-.recuadro1 .imgBx
-{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.recuadro1 .imgBx img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
+.recuadro1
+{
+    position:absolute;
+    width: 100%;
+    max-width: 2000px;
+    min-height: 2000px;
+    background:#fff;
+    margin-top: 110px;
+    display: grid;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+.recuadro1 h1
+{
+    text-align: center;
+}
+.recuadro1 .texto
+{
+    padding-left: 20px;
+    color: #003147;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.recuadro1 img
+{ 
+    padding-right: 50px ;
+    padding: 10px; 
+    margin: 10px; 
+    border: 2px solid black;
+    width: 250px; 
+}
+p.centrado
+{
+    text-align: center;
+}
+p
+{ 
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #003147;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.recuadro1 ul
+{
+display: grid;
+padding-left: 760px;
+text-align: left;
+}
+.recuadro1 ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.recuadro1 ul li .fa
+{
+color: #03a9f4;
+font-size: 20px;
+width: 20px;
+}
+.recuadro1 iframe
+{ 
+    padding-top: 60px;
+    padding: 10px; 
+    margin: 10px; 
+    border: 2px solid black;
+    width: 680px; 
+}
