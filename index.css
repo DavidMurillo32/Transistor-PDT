@@ -8,7 +8,7 @@
 }
 body
 {
-    background: #406E8E;
+    background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +20,35 @@ body
     width: 100%;
     max-width: 2000px;
     min-height: 1000px;
-    background:#8EA8C3;
+    background:#fff;
     margin: 50px;
     display: grid;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
-.pagina h1
+.superior
 {
-    color: #23395B;
+    position: absolute;
+    width: 100%;
+    max-width: 2000px;
+    min-height: 100px;
+    background:#003147;
+    margin: 0px;
+    display: grid;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.superior h1
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.superior h2
+{
+    color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -35,13 +56,26 @@ body
     font-weight: 600;
     line-height: 1.4em;
 }
-.pagina h4
+.pagina .recuadro1
 {
-    color: #fff ;
-    font-size: small;
-    margin-top: 10px;
-    text-transform: none;
-    text-align: left;
-    font-weight: 500;
-    line-height: 1.4em;
+    position: absolute;
+    background: #fff;
+    padding: 40px;
 }
+.recuadro1 .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.recuadro1 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
