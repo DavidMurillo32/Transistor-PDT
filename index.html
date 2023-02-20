@@ -26,10 +26,20 @@
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=0.7v+Re+Ie</li>
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie=[(Vbb-0.7v)/Re]</li>
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Vce=Vc-Ve</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie=Ic</li>
+                <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie≈Ic</li>
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Ve=Vbb-0.7v</li>
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Vc=Vcc-Ic*Rc</li>
             </ul>
+            <h4><u>Procedimiento para realizar el análisis es:</u></h4>
+            <ol>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión en la base VBB a través del divisor de tensión.</li>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Restar 0.7V para conseguir la tensión de emisor (0.3 para el germanio).</li>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Dividir por la resistencia de emisor para obtener la corriente de emisor.</li>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Suponer que la corriente de colector es aproximadamente igual a la corriente de emisor.</li>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Hallar la tensión de colector a tierra restando la tensión a través de la resistencia de <br>colector a la tensión de alimentación del colector.</li>
+                <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión emisor - colector restándole la tensión de emisor a la de colector.</li>
+            </ol>
+            <h3><u>Para más información puede ver el siguiente video el cual será de gran ayuda para entender más fácilmente el tema visto anteriormente.</u></h3>
             <p class="centrado"><iframe width="660" height="415" src="https://www.youtube.com/embed/kppBxyCJyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
             </div>
             
