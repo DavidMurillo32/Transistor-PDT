@@ -6,45 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transistor Por division de tensión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<div class="pagina">
-    <div class="superior">
-      <marquee scrollamount="15" direction="left" ><h1>Bienvenidos al curso de aplicaciones moviles 2023-1</h1></marquee>
-      <h2>EL TRANSISTOR por DIVISOR DE TENSIÓN (PDT) | 100% EFECTIVO |</h2>
-    </div>
-
-        <div class="recuadro1">
-            <div class="texto">
-            <h1>Universidad Surcolombiana [Juan Jose Ortiz] [DAVID MURILLO]</h1>
-            <p>El circuito de polarización por divisor de voltaje o de tensión, para un transistor bjt es como se muestra en la siguiente figura.</p>
-            <p class="centrado"><img src="circuito.jpeg"></p>
-            <p>La polarización por divisor de voltaje es la polarización más estable respecto al punto de trabajo [Q]. Se puede usar en todas las configuraciones del transistor bjt, emisor común, base común, y colector común. Las ecuaciones básicas son las siguientes:</p>
-            <ul>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=Vcc*[R2/(R1+R2)]</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=0.7v+Re+Ie</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie=[(Vbb-0.7v)/Re]</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Vce=Vc-Ve</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie≈Ic</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Ve=Vbb-0.7v</li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Vc=Vcc-Ic*Rc</li>
-            </ul>
-            <h4><u>Procedimiento para realizar el análisis es:</u></h4>
-            <ol>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión en la base VBB a través del divisor de tensión.</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Restar 0.7V para conseguir la tensión de emisor (0.3 para el germanio).</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Dividir por la resistencia de emisor para obtener la corriente de emisor.</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Suponer que la corriente de colector es aproximadamente igual a la corriente de emisor.</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Hallar la tensión de colector a tierra restando la tensión a través de la resistencia de <br>colector a la tensión de alimentación del colector.</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión emisor - colector restándole la tensión de emisor a la de colector.</li>
-            </ol>
-            <h3><u>Para más información puede ver el siguiente video el cual será de gran ayuda para entender más fácilmente el tema visto anteriormente.</u></h3>
-            <p class="centrado"><iframe width="660" height="415" src="https://www.youtube.com/embed/kppBxyCJyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-            </div>
-            
+<div class="margen container-fluid"> 
+    <div class="pagina row">
+        <div class="superior">
+        <marquee scrollamount="15" direction="left" ><h1>Bienvenidos al curso de aplicaciones moviles 2023-1</h1></marquee>
+        <h2>EL TRANSISTOR por DIVISOR DE TENSIÓN (PDT) | 100% EFECTIVO |</h2>
         </div>
-</div>
-    
+
+            <div class="recuadro1 row">
+                <div class="texto ">
+                <h1>Universidad Surcolombiana <br>[Juan Jose Ortiz] [David Santiago Murillo]</h1>
+                <p>El circuito de polarización por divisor de voltaje o de tensión, para un transistor bjt es como se muestra en la siguiente figura.</p>
+                <p class="centrado"><img src="circuito.jpeg"></p>
+                <p>La polarización por divisor de voltaje es la polarización más estable respecto al punto de trabajo [Q]. Se puede usar en todas las configuraciones del transistor bjt, emisor común, base común, y colector común. Las ecuaciones básicas son las siguientes:</p>
+                <ul>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=Vcc*[R2/(R1+R2)]</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=0.7v+Re+Ie</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie=[(Vbb-0.7v)/Re]</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vce=Vc-Ve</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie≈Ic</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Ve=Vbb-0.7v</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vc=Vcc-Ic*Rc</li>
+                </ul>
+                <h4><u>Procedimiento para realizar el análisis es:</u></h4>
+                <ol>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión en la base VBB a través del divisor de tensión.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Restar 0.7V para conseguir la tensión de emisor (0.3 para el germanio).</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Dividir por la resistencia de emisor para obtener la corriente de emisor.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Suponer que la corriente de colector es aproximadamente igual a la corriente de emisor.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Hallar la tensión de colector a tierra restando la tensión a través de la resistencia de <br>colector a la tensión de alimentación del colector.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Calcular la tensión emisor - colector restándole la tensión de emisor a la de colector.</li>
+                </ol>
+                <h3><u>Para más información puede ver el siguiente video el cual será de gran ayuda para entender más fácilmente el tema visto anteriormente.</u></h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/kppBxyCJyWU" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                </div>
+                
+            </div>
+    </div>
+</div>       
 </body>
 </html>
