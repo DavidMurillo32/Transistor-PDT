@@ -25,9 +25,9 @@ const urlParams = new URLSearchParams(queryString);
         var vc = VCC-ic*RC;
         var vce = vc-ve;
 
-    document.getElementById("vb").innerHTML = vbb;
-    document.getElementById("ie").innerHTML = ie;
-    document.getElementById("ic").innerHTML = ic;
-    document.getElementById("ve").innerHTML = ve;
-    document.getElementById("vc").innerHTML = vc;
-    document.getElementById("vce").innerHTML = vce;
+    document.getElementById("vb").innerHTML = Number((vbb).toFixed(3));
+    document.getElementById("ie").innerHTML = Number((ie).toFixed(3));
+    document.getElementById("ic").innerHTML = Number((ic).toFixed(3));
+    document.getElementById("ve").innerHTML = Number((ve).toFixed(3));
+    document.getElementById("vc").innerHTML = Number((vc).toFixed(3));
+    document.getElementById("vce").innerHTML = Number((vce).toFixed(3));
