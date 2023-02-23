@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,10 +24,10 @@
                 <h1>EL TRANSISTOR por DIVISOR DE TENSIÓN (PDT) | 100% EFECTIVO |</h1>
                 <p>El circuito de polarización por divisor de voltaje o de tensión, para un transistor bjt es como se muestra en la siguiente figura.</p>
                 <p class="centrado"><img src="circuito.jpeg"></p>
-                <p>La polarización por divisor de voltaje es la polarización más estable respecto al punto de trabajo [Q]. Se puede usar en todas las configuraciones del transistor bjt, emisor común, base común, y colector común. Las ecuaciones básicas son las siguientes:</p>
+                <p>La polarización por divisor de voltaje es la polarización más estable respecto al punto de trabajo [Q]<u>este nos indica la eficiencia del transistor, es decir que con una corriente de base pequeña es capaz de entregar una corriente de colector grande (ganancia de corriente del transistor)</u>. Se puede usar en todas las configuraciones del transistor bjt, emisor común, base común, y colector común. Las ecuaciones básicas son las siguientes:</p>
                 <ul>
-                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=Vcc*[R2/(R1+R2)]</li>
-                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vbb=0.7v+Re+Ie</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vb=Vcc*[R2/(R1+R2)]</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Vb=0.7v+Re+Ie</li>
                     <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie=[(Vbb-0.7v)/Re]</li>
                     <li><i class="fa fa-microchip" aria-hidden="true"></i> Vce=Vc-Ve</li>
                     <li><i class="fa fa-microchip" aria-hidden="true"></i> Ie≈Ic</li>
@@ -35,12 +36,13 @@
                 </ul>
                 <h4><u>Procedimiento para realizar el análisis es:</u></h4>
                 <ol>
-                    <li><i class="fa fa-pencil" aria-hidden="true"></i> Calcular la tensión en la base VBB a través del divisor de tensión.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i> Calcular la tensión en la base VB a través del divisor de tensión.</li>
                     <li><i class="fa fa-pencil" aria-hidden="true"></i> Restar 0.7V para conseguir la tensión de emisor (0.3 para el germanio).</li>
                     <li><i class="fa fa-pencil" aria-hidden="true"></i> Dividir por la resistencia de emisor para obtener la corriente de emisor.</li>
                     <li><i class="fa fa-pencil" aria-hidden="true"></i> Suponer que la corriente de colector es aproximadamente igual a la corriente de emisor.</li>
                     <li><i class="fa fa-pencil" aria-hidden="true"></i> Hallar la tensión de colector a tierra restando la tensión a través de la resistencia de <br>colector a la tensión de alimentación del colector.</li>
                     <li><i class="fa fa-pencil" aria-hidden="true"></i> Calcular la tensión emisor - colector restándole la tensión de emisor a la de colector.</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i> Con la corriente de colector y el voltaje de colector emisor, se dispone a graficar y entender el comportamiento de trabajo y eficiencia del transistor en su [PUNTO Q].</li>
                 </ol>
                 <h3><u>Para más información puede ver el siguiente video, el cual será de gran ayuda para entender más fácilmente el tema visto anteriormente.</u></h3>
                 </div> 
@@ -49,14 +51,14 @@
             </div>
             <div class="recuadro2">
                 <div class="texto2">
-                    <h1><u>Como usar la calculadora PDT </u></h1>
+                    <h1><u>Como usar la calculadora PDT </u><br><br></h1>
                     <ol>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Calcular la tensión en la base VBB a través del divisor de tensión.</li>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Restar 0.7V para conseguir la tensión de emisor (0.3 para el germanio).</li>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Dividir por la resistencia de emisor para obtener la corriente de emisor.</li>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Suponer que la corriente de colector es aproximadamente igual a la corriente de emisor.</li>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Hallar la tensión de colector a tierra restando la tensión a través de la resistencia de <br>colector a la tensión de alimentación del colector.</li>
-                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Calcular la tensión emisor - colector restándole la tensión de emisor a la de colector.</li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Hacer click en el botón de la parte inferior [Usar Calculadora PDT]. <i class="fa fa-arrow-circle-down" aria-hidden="true"></i><i class="fa fa-arrow-circle-down" aria-hidden="true"></i><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> En la ventana emergente, Leer los valores solicitados. <i class="fa fa-list-alt" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Ingresar los valores numéricos de <u>R1</u>, <u>R2</u>, <u>RE</u>, <u>RC</u> y <u>VCC</u>. <i class="fa fa-pencil-square-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Hacer click en el botón [Resolver]. <i class="fa fa-mouse-pointer" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> La calculadora realiza el proceso matemático y arrojara los valores de <u>Vb</u>, <u>Vc</u>, <u>Ve</u>, <u>Ie</u>, <u>Ic</u>, <u>Vce</u>. <i class="fa fa-wrench" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Para cerrar la ventana emergente realizar click en el botón . <i class="fa fa-times" aria-hidden="true"></i><br><br></li>
                     </ol>
                 </div>
                 <button id="btn-abrir-popup" class="btn-abrir-popup">Usar Calculadora PDT</button>
@@ -66,21 +68,21 @@
                     <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa fa-times" aria-hidden="true"></i></a>
                     <h3>Calculadora PDT</h3>
                     <h4>Descubre el funcionamiento teorico del PDT</h4>
-                    <form action="index2.html" method="get">
-                    <div class="contenedor-input">
-                        <input type="text" placeholder="R1">
-                        <input type="text" placeholder="R2">
-                        <input type="text" placeholder="RC">
-                        <input type="text" placeholder="RE">
-                        <input type="text" placeholder="VCC">
-                    </div>
+                    <form name="variables" action="index2.html" method="get">
+                        <div class="contenedor-input">
+                            <input type="number" placeholder="R1">
+                            <input type="number" placeholder="R2">
+                            <input type="number" placeholder="RC">
+                            <input type="number" placeholder="RE">
+                            <input type="number" placeholder="VCC">
+                        </div>
                         <input type="submit" class="btn-submit" value="RESOLVER">
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-
-    </div>
-</div>    
-<script src="popup.js"></script> 
-</body>
-</html>
+    
+        </div>
+    </div>    
+    <script src="popup.js"></script> 
+    </body>
+    </html>
